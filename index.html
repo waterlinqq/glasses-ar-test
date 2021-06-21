@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-language" content="en-EN" />
+    
+    <title>JEELIZ FACEFILTER: THREE.JS CUBE DEMO WITH 2 CANVAS</title>
+    
+    <!-- INCLUDE JEELIZ FACEFILTER SCRIPT -->
+    <script src="https://jeeliz.com/demos/faceFilter/dist/jeelizFaceFilter.js"></script>
+
+    <!-- INCLUDE THREE.JS -->
+    <!-- <script src="https://jeeliz.com/demos/faceFilter/libs/three/v112/three.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js" integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg==" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+
+    <!-- INCLUDE JEELIZ THREE.JS HELPER -->
+    <script src="https://jeeliz.com/demos/faceFilter/helpers/JeelizThreeHelper.js"></script>
+    <!-- <script src="https://threejs.org/examples/jsm/loaders/GLTFLoader.js"></script> -->
+    <!-- <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script> -->
+
+    <!-- INCLUDE JEELIZRESIZER -->
+    <script src="https://jeeliz.com/demos/faceFilter/helpers/JeelizResizer.js"></script>
+
+    <!-- INCLUDE DEMO SCRIPT -->
+    <script src="./main.js"></script>
+
+    <!-- INCLUDE FORK ME ON GITHUB BANNER -->
+    <!-- <script src="../../appearance/widget.js"></script> -->
+
+    <link rel="stylesheet" href="./test.css" type="text/css" />    
+  </head>
+  
+  <body onload="main()">
+    <!-- CANVAS BEHIND: VIDEO FACEFILTER ONLY -->
+    <canvas width="600" height="600" id='jeeFaceFilterCanvas'></canvas>
+
+    <!-- CANVAS ABOVE: AR WITH THREE.JS -->
+    <canvas width="600" height="600" id='threeCanvas'></canvas>
+  </body>
+</html>
